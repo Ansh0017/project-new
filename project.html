@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESH FEAST - Enjoy the Taste</title>
+    
+
+    <style>
+        /* Basic Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            background-image: url(—Pngtree—fine\ rice\ vegetarian\ simple\ food_997793.jpg);
+        }
+
+        header {
+            background-color: #0083e7; /* KFC Red */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .main-content h2 {
+            font-size: 2.5em;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 2s ease-out 1s forwards;
+        }
+
+        .menu-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            opacity: 0;
+            animation: fadeIn 2s ease-out 2s forwards;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 200px;
+            width: 200px;
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            background-color: #0083e7;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5em;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffd700;
+        } 
+        nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.special-offer {
+    background-color: #f3141400;
+    padding: 30px 10%;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-content h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ff8c00;
+}
+
+.offer-content p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.offer-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.offer-item {
+    text-align: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.offer-item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.offer-item h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.offer-item p {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.price-and-order {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.price-and-order p {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.order-now {
+    background-color: #ff8c00;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.special-offer h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem; 
+    font-weight: 700; 
+    color: #ff5c5c; /* Bold red color */
+    background: linear-gradient(45deg, #ff6f00, #ffab00); /* Gradient background */
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase; /* Make the text more prominent */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    letter-spacing: 1px; /* Slight letter spacing for added style */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add subtle hover effect for interactivity */
+.special-offer h2:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+/* Optional: Add an icon in front of the special offer */
+.special-offer h2::before {
+    content: "🔥"; /* Fire emoji for extra emphasis */
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* Optional: Small badge effect for extra pop */
+.special-offer h2::after {
+    content: "🎉";
+    font-size: 2rem;
+    margin-left: 10px;
+}
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-family: 'Playfair Display', serif;">FRESH FEAST - Enjoy the Taste</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="ORDER.HTML">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content" style="font-family: 'Playfair Display', serif;">
+        <h2>Welcome to FRESH FEAST - The Best Outlet in Town!</h2>
+        <p>Indulge in our delicious menu, from yummy veg course to crispy non veg course!</p>
+    </div>
+
+    <div class="menu-section">
+        <H2>MUST TRY MENU</H2>
+        <div class="menu-item">
+            <img src="burger.jpg" alt="BURGER">
+            <h3>BURGER</h3>
+        </div>
+        <div class="menu-item">
+            <img src="BUTTER CHICKEN.jpeg" alt="Chicken Sandwich">
+            <h3>BUTTER CHICKEN</h3>
+        </div>
+        <div class="menu-item">
+            <img src="CHOLE BHATURE.jpeg" alt="Fries">
+            <h3>CHOLE BHATURE</h3></div>
+    </div>
+            <div class="menu-section">
+            <section class="special-offer">
+                <div class="offer-content">
+                    <h2 style="font-family: 'Playfair Display', serif;">Friday's Special Offer!</h2>
+                    <p style="font-size: 1.5em;">Enjoy our delicious Butter Chicken and Chicken Burger at an unbeatable price this Friday!</p>
+                    <div class="offer-details">
+                        <div class="offer-item">
+                            <img src="BUTTER CHICKEN.jpeg" alt="Butter Chicken" class="offer-img">
+                            <strong><h3>Butter Chicken</h3>
+                            <p>Succulent chicken cooked in a rich, creamy sauce. Perfect for spice lovers!</p></strong>
+                        </div>
+                        <div class="offer-item">
+                            <img src="burger.jpg" alt="Chicken Burger" class="offer-img">
+                           <strong><h3>Chicken Burger</h3>
+                            <p>Freshly grilled chicken patty with all the right toppings, packed in a soft bun.</p></strong>
+                        </div>
+                    </div>
+                    <div class="price-and-order">
+                        <p><strong>Only ₹650 for both!</strong></p>
+                        <button class="order-now"><a href="payment.html">Order Now</a></button>
+                    </div>
+                </div>
+            </section>   
